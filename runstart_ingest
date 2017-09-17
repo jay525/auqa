@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+cd /home/ipopp/run/
+#rm -fr /home/ipopp/run/log/runstart_ingest.log
+nohup /home/ipopp/run/start_ingest.sh >>/home/ipopp/run/log/runstart_ingest.log 2>&1 &
+

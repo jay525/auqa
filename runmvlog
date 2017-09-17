@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+cd /home/ipopp/run
+
+nohup /home/ipopp/run/mvlog.sh >>/home/ipopp/run/log/before/runmvlog 2>&1 &
+
+

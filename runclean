@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+cd /home/ipopp/run
+
+nohup /home/ipopp/run/clean.sh >>/home/ipopp/run/log/runclean.log 2>&1 &
+
+

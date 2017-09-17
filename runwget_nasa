@@ -1,0 +1,5 @@
+#!/bin/bash 
+
+cd /home/ipopp/run
+rm -fr /home/ipopp/run/log/wget_nasa.log
+nohup /home/ipopp/run/wget_nasa.sh >/home/ipopp/run/log/runwget_nasa.log 2>&1 &

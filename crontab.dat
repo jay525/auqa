@@ -1,0 +1,18 @@
+#crontab -e data
+#runauqa
+55 23 * * * source /home/ipopp/run/runmvlog >/dev/null
+30 05 * * * source /home/ipopp/run/runauqatime >/dev/null
+30 03 * * * source /home/ipopp/run/runwget_auqa >/dev/null
+10 08 * * * source /home/ipopp/run/runwget_nasa >/dev/null
+20 * * * * source /home/ipopp/run/runstart_ipopp >/dev/null
+50 * * * * source /home/ipopp/run/runtrangdf >/dev/null
+#10 14 * * * source /home/ipopp/run/runclean >/dev/null
+
+
+#runNPP
+#10 08 * * * source /home/ipopp/run/runwget_auqa >/dev/null
+#00 * * * * source /home/ipopp/run/runwget_noaa >/dev/null
+#20 */3 * * * source /home/ipopp/run/start_ipopp.sh >/dev/null
+#50 * * * * source /home/ipopp/run/runtrangdf >/dev/null
+
+
